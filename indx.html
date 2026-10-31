@@ -1,0 +1,938 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+><head><link rel="stylesheet" href="style.css"</head>ad>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Trading Academy</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body<script src="script.js"></script>
+</body>
+</html>
+body{
+ background:#0b1120;color:#e5e7eb;
+ font-family:Arial,sans-serif;line-height:1.6
+}
+header{
+ background:#111c32;padding:22px;text-align:center;
+ border-bottom:2px solid #16a34a
+}
+header h1{color:#22c55e}
+header p{color:#aaa}
+.container{display:flex;min-height:100vh}
+nav{
+ width:260px;background:#111827;padding:20px;
+ flex-shrink:0
+}
+nav h3{color:#22c55e;margin-bottom:15px}
+nav button{
+ display:block;width:100%;padding:12px;
+ margin:6px 0;text-align:left;
+ background:#1f2937;color:white;
+ border:0;border-radius:6px;cursor:pointer
+}
+nav button:hover{background:#166534}
+main{padding:25px;flex:1;min-width:0}
+section{display:none}
+section.active{display:block}
+h2{color:#22c55e;margin-bottom:15px}
+h3{color:#86efac;margin:15px 0 8px}
+p,li{margin-bottom:10px}
+.card{
+ background:#172338;padding:18px;
+ margin:15px 0;border-radius:10px;
+ border-left:4px solid #22c55e
+}
+input,select{
+ padding:10px;margin:7px 0;
+ border-radius:5px;border:0;width:100%;
+ background:#26364c;color:white
+}
+.action{
+ padding:10px 18px;background:#16a34a;
+ border:0;color:white;border-radius:5px;
+ cursor:pointer;margin-top:8px
+}
+table{width:100%;border-collapse:collapse}
+td,th{border:1px solid #34445c;padding:10px;text-align:left}
+footer{text-align:center;padding:20px;color:#888}
+@media(max-width:700px){
+ .container{display:block}
+ nav{width:100%}
+ nav button{display:inline-block;width:auto}
+ main{padding:15px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>📈 ABHISHEK TRADING ACADEMY</h1>
+<p>Complete Trading Course | Beginner to Advanced | Hindi</p>
+</header>
+
+<div class="container">
+
+<nav>
+<h3>Trading Course</h3>
+<button onclick="show('home')">🏠 Home</button>
+<button onclick="show('basic')">01. Trading Basics</button>
+<button onclick="show('market')">02. Market Types</button>
+<button onclick="show('candle')">03. Candlesticks</button>
+<button onclick="show('trend')">04. Trend Analysis</button>
+<button onclick="show('sr')">05. Support & Resistance</button>
+<button onclick="show('pa')">06. Price Action</button>
+<button onclick="show('indicator')">07. Indicators</button>
+<button onclick="show('volume')">08. Volume Analysis</button>
+<button onclick="show('liquidity')">09. Liquidity & Sweep</button>
+<button onclick="show('smc')">10. Smart Money Concepts</button>
+<button onclick="show('risk')">11. Risk Management</button>
+<button onclick="show('strategy')">12. Trading Strategies</button>
+<button onclick="show('practice')">13. Paper Trading</button>
+<button onclick="show('journal')">14. Trading Journal</button>
+<button onclick="show('quiz')">15. Trading Quiz</button>
+</nav>
+
+<main>
+
+<section id="home" class="active">
+<h2>Welcome to Trading Academy 🎓</h2>
+<div class="card">
+<h3>Trading kya hai?</h3>
+Trading ka matlab financial market mein stocks ya doosre
+financial instruments ko buy aur sell karke price movement
+se profit kamane ki koshish karna hai.
+</div>
+<h3>Learning Roadmap</h3>
+<ul>
+<li>Beginner: Market Basics</li>
+<li>Intermediate: Candlesticks & Indicators</li>
+<li>Advanced: Price Action & Liquidity</li>
+<li>Professional Skills: Risk Management & Psychology</li>
+<li>Practice: Paper Trading & Journal</li>
+</ul>
+<p>Har topic ko samjho, chart par identify karo aur paper trading
+se practice karo.</p>
+</section>
+
+<section id="basic">
+<h2>01. Trading Basics</h2>
+<div class="card">
+<h3>Stock Market kya hai?</h3>
+Stock Market ek marketplace hai jahan companies ke shares
+buy aur sell kiye jaate hain.
+</div>
+<h3>Important Terms</h3>
+<ul>
+<li><b>Stock:</b> Company mein ownership ka ek hissa.</li>
+<li><b>Broker:</b> Trading karne ka platform.</li>
+<li><b>Demat Account:</b> Shares ko electronic form mein rakhna.</li>
+<li><b>Trading Account:</b> Buy aur sell orders place karna.</li>
+<li><b>Index:</b> Market performance dikhane wala indicator.</li>
+<li><b>Liquidity:</b> Kisi asset ko aasani se buy/sell kar pana.</li>
+</ul>
+</section>
+
+<section id="market">
+<h2>02. Market Types</h2>
+<div class="card">
+<h3>Delivery Trading</h3>
+Shares ko buy karke apne Demat account mein hold karna.
+</div>
+<div class="card">
+<h3>Intraday Trading</h3>
+Ek hi trading session mein buy aur sell karna.
+</div>
+<div class="card">
+<h3>Swing Trading</h3>
+Kuch din ya hafton tak position hold karna.
+</div>
+<div class="card">
+<h3>Long-Term Investing</h3>
+Mahino ya saalon tak investment hold karna.
+</div>
+</section>
+
+<section id="candle">
+<h2>03. Candlestick Patterns</h2>
+<div class="card">
+<h3>Candlestick kya hai?</h3>
+Candlestick ek fixed time period mein price ka Open,
+High, Low aur Close dikhati hai.
+</div>
+<ul>
+<li><b>Green Candle:</b> Close, Open se upar.</li>
+<li><b>Red Candle:</b> Close, Open se neeche.</li>
+<li><b>Doji:</b> Open aur Close lagbhag same.</li>
+<li><b>Hammer:</b> Chhoti body aur lambi lower wick.</li>
+<li><b>Shooting Star:</b> Chhoti body aur lambi upper wick.</li>
+<li><b>Engulfing:</b> Badi candle previous candle ki body ko cover karti hai.</li>
+</ul>
+<div class="card">
+<b>Important:</b> Sirf candle pattern dekhkar trade mat lena.
+Location, trend aur confirmation bhi check karo.
+</div>
+</section>
+
+<section id="trend">
+<h2>04. Trend Analysis</h2>
+<div class="card">
+<h3>Uptrend 📈</h3>
+Higher High (HH) + Higher Low (HL).
+</div>
+<div class="card">
+<h3>Downtrend 📉</h3>
+Lower High (LH) + Lower Low (LL).
+</div>
+<div class="card">
+<h3>Sideways Market</h3>
+Price ek range ke andar move karta hai.
+</div>
+</section>
+
+<section id="sr">
+<h2>05. Support & Resistance</h2>
+<div class="card">
+<h3>Support</h3>
+Woh price area jahan buying interest aane ki sambhavna hoti hai.
+</div>
+<div class="card">
+<h3>Resistance</h3>
+Woh price area jahan selling pressure aane ki sambhavna hoti hai.
+</div>
+<p>Support aur Resistance ko exact line ke bajay zone ki tarah
+samajhna aksar behtar hota hai.</p>
+</section>
+
+<section id="pa">
+<h2>06. Advanced Price Action</h2>
+<ul>
+<li>Market Structure</li>
+<li>Higher High & Higher Low</li>
+<li>Lower High & Lower Low</li>
+<li>Break of Structure (BOS)</li>
+<li>Change of Character (CHoCH)</li>
+<li>Breakout & Breakdown</li>
+<li>Retest</li>
+<li>Fakeout</li>
+<li>Demand & Supply Zones</li>
+<li>Rejection Candles</li>
+<li>Multi-Timeframe Analysis</li>
+</ul>
+<div class="card">
+<h3>Price Action kya hai?</h3>
+Indicators par depend kiye bina price movement aur chart
+structure ko samajhne ki technique.
+</div>
+</section>
+
+<section id="indicator">
+<h2>07. Technical Indicators</h2>
+<div class="card">
+<h3>RSI</h3>
+Relative Strength Index momentum indicator hai.
+Common levels:
+<ul>
+<li>70 ke upar: Overbought zone</li>
+<li>30 ke neeche: Oversold zone</li>
+<li>50: Momentum reference level</li>
+</ul>
+</div>
+<div class="card">
+<h3>Moving Average</h3>
+Price ka average trend samajhne mein madad karta hai.
+<ul>
+<li>20 EMA</li>
+<li>50 EMA</li>
+<li>200 EMA</li>
+</ul>
+</div>
+<div class="card">
+<h3>MACD</h3>
+Trend aur momentum ko analyse karne ka indicator.
+</div>
+</section>
+
+<section id="volume">
+<h2>08. Volume Analysis</h2>
+<ul>
+<li>High Volume: Zyada trading activity.</li>
+<li>Low Volume: Kam trading activity.</li>
+<li>Breakout + High Volume: Breakout ko support mil sakta hai.</li>
+<li>Price Rise + Falling Volume: Momentum kamzor ho sakta hai.</li>
+</ul>
+</section>
+
+<section id="liquidity">
+<h2>09. Liquidity & Liquidity Sweep</h2>
+<div class="card">
+<h3>Liquidity kya hai?</h3>
+Market mein woh price levels jahan orders aur stop-loss
+collect ho sakte hain.
+</div>
+<ul>
+<li><b>Buy Side Liquidity:</b> Previous highs ke upar.</li>
+<li><b>Sell Side Liquidity:</b> Previous lows ke neeche.</li>
+<li><b>Liquidity Sweep:</b> Price obvious high ya low ke paar
+jaakar wapas reverse ho sakta hai.</li>
+</ul>
+<p>Liquidity sweep ke baad confirmation aur market structure
+check karna zaroori hai.</p>
+</section>
+
+<section id="smc">
+<h2>10. Smart Money Concepts</h2>
+<ul>
+<li>Order Blocks</li>
+<li>Fair Value Gap (FVG)</li>
+<li>Imbalance</li>
+<li>Liquidity Pools</li>
+<li>Premium & Discount</li>
+<li>Inducement</li>
+<li>Market Structure Shift</li>
+<li>Mitigation</li>
+</ul>
+<div class="card">
+SMC market structure, liquidity aur price imbalance ko analyse
+karne ka ek framework hai. Iske concepts guaranteed signals nahi hain.
+</div>
+</section>
+
+<section id="risk">
+<h2>11. Risk Management</h2>
+<div class="card">
+<h3>Golden Rules</h3>
+<ul>
+<li>Har trade se pehle Stop Loss decide karo.</li>
+<li>Ek trade mein capital ka chhota hissa risk karo.</li>
+<li>Loss recover karne ke liye revenge trading mat karo.</li>
+<li>Risk/Reward ratio samjho.</li>
+<li>Trading capital ko protect karna priority hai.</li>
+</ul>
+</div>
+<h3>Risk Calculator</h3>
+<label>Account Capital (₹)</label>
+<input id="capital" type="number" placeholder="10000">
+<label>Risk Percentage (%)</label>
+<input id="riskpercent" type="number" placeholder="1">
+<button class="action" onclick="calculateRisk()">Calculate Risk</button>
+<div class="card" id="riskresult">Result yahan dikhega.</div>
+</section>
+
+<section id="strategy">
+<h2>12. Trading Strategies</h2>
+<div class="card">
+<h3>Trend + Pullback Strategy</h3>
+1. Trend identify karo.<br>
+2. Support ya resistance zone mark karo.<br>
+3. Pullback ka wait karo.<br>
+4. Confirmation candle dekho.<br>
+5. Stop Loss aur Target plan karo.
+</div>
+<div class="card">
+<h3>Breakout Strategy</h3>
+1. Important resistance identify karo.<br>
+2. Candle close ka wait karo.<br>
+3. Volume analyse karo.<br>
+4. Retest aur confirmation check karo.
+</div>
+<p>Har strategy ko historical charts aur paper trading mein test
+karna zaroori hai.</p>
+</section>
+
+<section id="practice">
+<h2>13. Paper Trading Practice</h2>
+<div class="card">
+<h3>Daily Practice Tasks</h3>
+<ul>
+<li>Market trend identify karo.</li>
+<li>Support aur Resistance mark karo.</li>
+<li>Candlestick pattern identify karo.</li>
+<li>Volume check karo.</li>
+<li>Entry, Stop Loss aur Target likho.</li>
+<li>Trade ka result note karo.</li>
+</ul>
+</div>
+<p>Real money lagane se pehle paper trading mein consistency
+develop karo.</p>
+</section>
+
+<section id="journal">
+<h2>14. Trading Journal</h2>
+<label>Stock Name</label>
+<input id="stock" placeholder="Example: RELIANCE">
+<label>Entry Price</label>
+<input id="entry" type="number" placeholder="250">
+<label>Exit Price</label>
+<input id="exit" type="number" placeholder="260">
+<label>Quantity</label>
+<input id="qty" type="number" placeholder="5">
+<button class="action" onclick="saveTrade()">Save Trade</button>
+<div class="card" id="journalresult"></div>
+<table>
+<thead><tr><th>Stock</th><th>Entry</th><th>Exit</th><th>P/L</th></tr></thead>
+<tbody id="trades"></tbody>
+</table>
+</section>
+
+<section id="quiz">
+<h2>15. Trading Quiz</h2>
+<div class="card">
+<p>1. Uptrend mein kya banta hai?</p>
+<select id="q1">
+<option value="">Select Answer</option>
+<option value="a">Lower High + Lower Low</option>
+<option value="b">Higher High + Higher Low</option>
+</select>
+<p>2. RSI ka common overbought level kya hai?</p>
+<select id="q2">
+<option value="">Select Answer</option>
+<option value="a">30</option>
+<option value="b">50</option>
+<option value="c">70</option>
+</select>
+<p>3. Stop Loss ka main purpose kya hai?</p>
+<select id="q3">
+<option value="">Select Answer</option>
+<option value="a">Risk limit karna</option>
+<option value="b">Profit guarantee karna</option>
+</select>
+<button class="action" onclick="checkQuiz()">Submit Quiz</button>
+<h3 id="quizresult"></h3>
+</div>
+</section>
+
+</main>
+</div>
+
+<footer>
+<p>© 2026 Abhishek Trading Academy | Learn • Practice • Improve</p>
+<p>Educational Purpose Only | No Guaranteed Returns</p>
+</footer>
+
+<script>
+function show(id){
+ document.querySelectorAll('main section').forEach(s=>{
+ s.classList.remove('active');
+ });
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0,0);
+}
+
+function calculateRisk(){
+ let c=Number(document.getElementById('capital').value);
+ let r=Number(document.getElementById('riskpercent').value);
+ if(c<=0 || r<=0 || r>100){
+ alert("Valid capital aur risk percentage dalo");
+ return;
+ }
+ let risk=c*r/100;
+ document.getElementById('riskresult').innerHTML=
+ "Maximum Planned Risk: ₹"+risk.toFixed(2);
+}
+
+function saveTrade(){
+ let s=document.getElementById('stock').value;
+ let e=Number(document.getElementById('entry').value);
+ let x=Number(document.getElementById('exit').value);
+ let q=Number(document.getElementById('qty').value);
+ if(!s || e<=0 || x<=0 || q<=0){
+ alert("Sabhi details sahi bharo");
+ return;
+ }
+ let pl=(x-e)*q;
+ let row=document.createElement('tr');
+ [s,e,x,"₹"+pl.toFixed(2)].forEach(v=>{
+ let td=document.createElement('td');
+ td.textContent=v;
+ row.appendChild(td);
+ });
+ document.getElementById('trades').appendChild(row);
+ document.getElementById('journalresult').textContent=
+ "Trade saved. P/L: ₹"+pl.toFixed(2);
+}
+
+function checkQuiz(){
+ let score=0;
+ if(document.getElementById('q1').value==='b')score++;
+ if(document.getElementById('q2').value==='c')score++;
+ if(document.getElementById('q3').value==='a')score++;
+ document.getElementById('quizresult').textContent=
+ "Your Score: "+score+"/3";
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Trading Academy</title>
+    <meta name="description" content="Learn trading from beginner to advanced with lessons, paper trading and a trading journal.">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>📈</span> Abhishek Trading Academy
+        </div>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#learn">Learn</a>
+            <a href="#paper-trading">Paper Trading</a>
+            <a href="#journal">Journal</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div>
+            <p class="tag">YOUR TRADING JOURNEY STARTS HERE</p>
+
+            <h1>Master the Art of <span>Trading</span></h1>
+
+            <p>
+                Learn Stock Market, Technical Analysis, Price Action,
+                Risk Management and Advanced Trading Strategies.
+            </p>
+
+            <a href="#learn" class="btn">Start Learning</a>
+        </div>
+    </section>
+
+
+    <!-- DASHBOARD -->
+    <main class="container">
+
+        <section id="dashboard">
+            <h2>Trading Dashboard</h2>
+            <p>Your personal trading learning dashboard.</p>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h3>Virtual Balance</h3>
+                    <h2 id="balance">₹1,00,000</h2>
+                    <p>Paper Trading Account</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Total Trades</h3>
+                    <h2 id="totalTrades">0</h2>
+                    <p>Your simulated trades</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Total Profit / Loss</h3>
+                    <h2 id="totalPnL">₹0</h2>
+                    <p>Paper Trading Result</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Course Progress</h3>
+                    <h2 id="progress">0%</h2>
+                    <p>Learning progress</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CHART SECTION -->
+        <section class="section">
+            <h2>Market Chart</h2>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Sample Market Chart</h3>
+                    <span class="demo-label">DEMO DATA</span>
+                </div>
+
+                <canvas id="marketChart"></canvas>
+
+                <p class="note">
+                    Note: This is an illustrative chart, not a live market chart.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- LEARNING SECTION -->
+        <section id="learn" class="section">
+            <h2>Trading Course</h2>
+
+            <p>
+                Learn trading step by step, from beginner to advanced level.
+            </p>
+
+            <div class="course-grid" id="courseList">
+
+                <div class="course-card">
+                    <span>01</span>
+                    <h3>Trading Basics</h3>
+                    <p>Understand the stock market and how trading works.</p>
+                    <button onclick="openLesson(0)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>02</span>
+                    <h3>Candlestick Patterns</h3>
+                    <p>Learn bullish, bearish and important candle patterns.</p>
+                    <button onclick="openLesson(1)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>03</span>
+                    <h3>Support & Resistance</h3>
+                    <p>Understand important price zones in the market.</p>
+                    <button onclick="openLesson(2)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>04</span>
+                    <h3>Trend Analysis</h3>
+                    <p>Learn uptrend, downtrend and sideways markets.</p>
+                    <button onclick="openLesson(3)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>05</span>
+                    <h3>Moving Average</h3>
+                    <p>Learn 20 EMA, 50 MA and trend confirmation.</p>
+                    <button onclick="openLesson(4)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>06</span>
+                    <h3>Volume Analysis</h3>
+                    <p>Understand volume and price movement.</p>
+                    <button onclick="openLesson(5)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>07</span>
+                    <h3>Price Action</h3>
+                    <p>Learn how to read price movement without depending on indicators.</p>
+                    <button onclick="openLesson(6)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>08</span>
+                    <h3>RSI Indicator</h3>
+                    <p>Understand overbought, oversold and divergence.</p>
+                    <button onclick="openLesson(7)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>09</span>
+                    <h3>Risk Management</h3>
+                    <p>Learn stop loss, position sizing and risk-reward ratio.</p>
+                    <button onclick="openLesson(8)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>10</span>
+                    <h3>Liquidity & Liquidity Sweep</h3>
+                    <p>Understand buy-side and sell-side liquidity.</p>
+                    <button onclick="openLesson(9)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>11</span>
+                    <h3>Market Structure</h3>
+                    <p>Learn HH, HL, LH and LL.</p>
+                    <button onclick="openLesson(10)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>12</span>
+                    <h3>Break of Structure</h3>
+                    <p>Understand BOS and Change of Character.</p>
+                    <button onclick="openLesson(11)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>13</span>
+                    <h3>Order Blocks</h3>
+                    <p>Understand institutional price zones.</p>
+                    <button onclick="openLesson(12)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>14</span>
+                    <h3>Fair Value Gap</h3>
+                    <p>Learn imbalance and FVG concepts.</p>
+                    <button onclick="openLesson(13)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>15</span>
+                    <h3>Trading Psychology</h3>
+                    <p>Control emotions, fear and greed.</p>
+                    <button onclick="openLesson(14)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>16</span>
+                    <h3>Intraday Trading</h3>
+                    <p>Understand intraday trading strategies.</p>
+                    <button onclick="openLesson(15)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>17</span>
+                    <h3>Swing Trading</h3>
+                    <p>Learn how to analyse multi-day trades.</p>
+                    <button onclick="openLesson(16)">Start Lesson</button>
+                </div>
+
+                <div class="course-card">
+                    <span>18</span>
+                    <h3>Advanced Trading Strategy</h3>
+                    <p>Combine price action, volume and risk management.</p>
+                    <button onclick="openLesson(17)">Start Lesson</button>
+                </div>
+
+            </div>
+
+            <div id="lessonViewer" class="lesson-viewer">
+                <h3 id="lessonTitle">Select a lesson</h3>
+                <p id="lessonContent">Your lesson will appear here.</p>
+                <button id="completeLessonBtn" onclick="completeLesson()">
+                    Mark as Completed
+                </button>
+            </div>
+        </section>
+
+
+        <!-- PAPER TRADING -->
+        <section id="paper-trading" class="section">
+
+            <h2>Paper Trading Simulator</h2>
+
+            <p>
+                Practice buying and selling using virtual money.
+                No real money is involved.
+            </p>
+
+            <div class="trading-card">
+
+                <div class="form-group">
+                    <label for="stockName">Stock Name</label>
+                    <input
+                        type="text"
+                        id="stockName"
+                        placeholder="Example: RELIANCE"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="tradePrice">Price (₹)</label>
+                    <input
+                        type="number"
+                        id="tradePrice"
+                        placeholder="Enter price"
+                        min="0.01"
+                        step="0.01"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="tradeQuantity">Quantity</label>
+                    <input
+                        type="number"
+                        id="tradeQuantity"
+                        placeholder="Enter quantity"
+                        min="1"
+                    >
+                </div>
+
+                <div class="trade-buttons">
+                    <button class="buy-btn" onclick="buyStock()">BUY</button>
+                    <button class="sell-btn" onclick="sellStock()">SELL</button>
+                </div>
+
+                <p id="tradeMessage"></p>
+
+            </div>
+
+
+            <!-- OPEN POSITIONS -->
+            <div class="table-card">
+                <h3>Open Positions</h3>
+
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stock</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Investment</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="positionsTable">
+                            <tr>
+                                <td colspan="5">No open positions</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- TRADING JOURNAL -->
+        <section id="journal" class="section">
+
+            <h2>Trading Journal</h2>
+
+            <p>Record your trading experience and learn from mistakes.</p>
+
+            <div class="journal-card">
+
+                <div class="form-group">
+                    <label for="journalStock">Stock Name</label>
+                    <input
+                        type="text"
+                        id="journalStock"
+                        placeholder="Enter stock name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="journalStrategy">Strategy</label>
+                    <input
+                        type="text"
+                        id="journalStrategy"
+                        placeholder="Example: Price Action"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="journalResult">Result</label>
+                    <select id="journalResult">
+                        <option value="Profit">Profit</option>
+                        <option value="Loss">Loss</option>
+                        <option value="Breakeven">Breakeven</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="journalNotes">Notes</label>
+                    <textarea
+                        id="journalNotes"
+                        placeholder="Write your trading experience..."
+                    ></textarea>
+                </div>
+
+                <button onclick="addJournalEntry()" class="btn">
+                    Save Journal Entry
+                </button>
+
+                <button onclick="exportJournal()" class="btn secondary-btn">
+                    Export CSV
+                </button>
+
+            </div>
+
+            <div class="table-card">
+                <h3>My Trading Records</h3>
+
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Stock</th>
+                                <th>Strategy</th>
+                                <th>Result</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="journalTable">
+                            <tr>
+                                <td colspan="5">No journal entries yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- RISK MANAGEMENT -->
+        <section class="section">
+            <h2>Risk Management Rules</h2>
+
+            <div class="rules-grid">
+
+                <div class="rule-card">
+                    <h3>01. Stop Loss</h3>
+                    <p>Always decide your stop loss before entering a trade.</p>
+                </div>
+
+                <div class="rule-card">
+                    <h3>02. Risk Per Trade</h3>
+                    <p>Beginners can study the 1% risk rule as a learning guideline.</p>
+                </div>
+
+                <div class="rule-card">
+                    <h3>03. Risk Reward</h3>
+                    <p>Understand the potential reward compared with the possible loss.</p>
+                </div>
+
+                <div class="rule-card">
+                    <h3>04. Trading Psychology</h3>
+                    <p>Avoid revenge trading, overtrading and emotional decisions.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2>Abhishek Trading Academy</h2>
+
+        <p>Learn. Practice. Improve.</p>
+
+        <p>
+            Educational platform only. Not financial advice.
+            No real broker orders are placed.
+        </p>
+
+        <p>© 2026 Abhishek Trading Academy</p>
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+S
